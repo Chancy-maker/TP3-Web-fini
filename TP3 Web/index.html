@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--L'objectif de ce TP est de joueur au jeu du nombre mystère avec un ordinateur par
+l'intermédiaire d'une page web.
+Il y aura deux modes de jeu: le joueur devine le nombre auquel pense l'ordinateur (game1),
+l'ordinateur devine le nombre auquel pense le joueur(game2)-->
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Nombre Mystère</title>
+    </head>
+    <body>
+        <div id="game_selection">
+            <!--#start_game1et#start_game2qui permettentde  commencer  respectivement  une  partie  dans  laquelle  
+                le  joueur  devine  et  une  partie  dans  laquellel’ordinateur devine.-->
+            <input id="start_game1" type="button" value="start_game1"> 
+            <input id="start_game2" type="button" value="start_game2"> 
+        </div>
+        <div id="game1">
+            <input id="player_input" type="text"> <!--Il permettra au joueur d'entrer une valeur à tester-->
+            <input id = "try_button" type="button" value="try_button"> <!--l permettra au joueur de tester la valeur qu’il a entr ́ee-->
+            <div id="message1"><span id="children"></span></span></div> <!--pour afficher le r ́esultat de de l’essai-->
+            <input id= "restart_button1" type="button" value="restart_button1"> <!--pour recommencer une fois la partie termin ́ee-->
+        </div >
+        <div id="game2">
+            <input id="value_to_find" type="text" >
+            <input id="validate_button" type="button" value="validate button">
+            <div id="message2"></div> <!--pour afficher l’essai de l’ordinateur-->
+            <input id="smaller_button" type="button" value="smaller_button"> <!--il permettra au joueur d’indiquer `a l’ordinateur que la valeur estplus petite que sa proposition-->
+            <input id="bigger_button" type="button" value="bigger_button"> <!--il permettra au joueur d’indiquer `a l’ordinateur que la valeur estplus grande que sa proposition-->
+            <input id="found_button" type="button" value="found_button"> <!--e joueur cliquera dessus lorsque la proposition de l’ordinateur estcorrecte-->
+            <input id="restart_button2" type="button" value="restart_button2"> <!--pour recommencer une fois la partie termin ́ee-->
+        </div >
+
+        <script src="index.js"></script>
+    </body>
+</html>
